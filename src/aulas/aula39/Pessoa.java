@@ -1,4 +1,4 @@
-package aulas.aula38;
+package aulas.aula39;
 
 public class Pessoa {
 
@@ -12,8 +12,13 @@ public class Pessoa {
     private String cpf;
     //o telefoneCelular é uma variavel string
     private String telefoneCelular;
-    public Pessoa() {}
-    
+    //o nomeVisibilidade é uma variavel do tipo string
+    protected String nomeVisibilidade;
+    //um construto padra que recebe o nomeVisibilidade que recebe sdfsdfsdf
+    public Pessoa() {
+        nomeVisibilidade = "sdfsdfsfsdf";
+    }
+
     //ele estara se referindo ao atributo fora do metodo
     public Pessoa(String nome, String endereco, String telefone) {
         super();
@@ -51,6 +56,15 @@ public class Pessoa {
     }
     //setTelefoneCelular  vai dar um valor ao telefoneCelular
     public void setTelefoneCelular(String telefoneCelular) {
+
         this.telefoneCelular = telefoneCelular;
+    }
+
+    public String getNomeVisibilidade() {
+        return nomeVisibilidade;
+    }
+
+    public void setNomeVisibilidade(String nomeVisibilidade) {
+        this.nomeVisibilidade = nomeVisibilidade;
     }
 }

@@ -1,4 +1,4 @@
-package aulas.aula37.exemplo01;
+package aulas.aula38;
 
 //a Classe professor erda todos os atributos da classe pessoa
 public class Professor extends Pessoa {

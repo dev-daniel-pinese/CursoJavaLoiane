@@ -1,13 +1,24 @@
-package aulas.aula37.exemplo01;
+package aulas.aula38;
 //a Classe aluno vai erda todos os atributos da classe e pessoa
 
 public class Aluno extends Pessoa {
 
     //o curso é uma variavel string
     private String curso;
-
     //a notas é uma variavel double e tambem é um vetor
     private double[] notas;
+
+    //vai usar o costrutor da classe mae
+    public Aluno() {
+        super();
+    }
+
+    //vai pegar todos os atributos da classe mae
+    public Aluno(String nome, String endereco, String telefone, String curso) {
+        super(nome, endereco, telefone);
+        this.curso = curso;
+    }
+
     //getCurso vai puxar o curso
     public String getCurso() {
         return curso;
@@ -25,11 +36,19 @@ public class Aluno extends Pessoa {
         this.notas = notas;
     }
     //vai caucular a media e retornara 0
-    public double calcularMedia(){
+    public double calcularMedia() {
         return 0;
     }
     //vai verificar se é aprovado e retonara true
-    public boolean verificarAprovado(){
+    public boolean verificarAprovado() {
         return true;
+    }
+
+    public void metodoQualquer() {
+        //vai pegar o atributo cpf da classe mae e vai printar ele
+        super.setCpf("345345345354");
+
+        //estara se referindo a um atribuyo fora do metodo
+        this.setCpf("34534534");
     }
 }

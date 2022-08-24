@@ -10,14 +10,20 @@ public class Exer14 {
 
         Scanner scan = new Scanner(System.in);
 
+        //vai printar
         System.out.println("Entre com o tamanho do arquivo:");
+        //a variavel sera scaneada
         double tamArquivo = scan.nextDouble();
 
+        //vai printar
         System.out.println("Entre com a velocidade da internet:");
+        //a variavel sera scaneada
         double velInternet = scan.nextDouble();
 
+        //a variavel recebera tamanho do arquivo / internet
         double tempo = tamArquivo / velInternet;
 
-        System.out.println("Tempo de download: " + tempo);
+        //vai printar
+        System.out.println("Entre com o tamanho do arquivo / internet: " + tempo);
     }
 }
